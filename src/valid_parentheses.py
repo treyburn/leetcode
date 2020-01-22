@@ -22,10 +22,6 @@ class Solution:
             return True
 
 
-
-
-
-
 solution = Solution()
 
 assert solution.is_valid("()")
