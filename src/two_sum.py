@@ -4,6 +4,10 @@ from typing import List
 class Solution:
 
     def two_sum(self, nums: List[int], target: int) -> List[int]:
+        """
+        two_sum takes in a list in integers and determines if two of the values in that list can sum up to the target.
+        If that condition is met then it returns the index location of those values in the list.
+        """
         idx = 0
         for val1 in nums:
             idx += 1
