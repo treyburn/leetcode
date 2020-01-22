@@ -7,6 +7,9 @@ class Solution:
         """
         two_sum takes in a list in integers and determines if two of the values in that list can sum up to the target.
         If that condition is met then it returns the index location of those values in the list.
+        :param nums: a list of integers
+        :param target: target integer
+        :return: returns a list of the two indexes - or none
         """
         idx = 0
         for val1 in nums:
