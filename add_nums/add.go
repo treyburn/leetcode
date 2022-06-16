@@ -1,18 +1,12 @@
-package main
+package add_nums
 
-import "fmt"
-
-// Definition for singly-linked list.
+// ListNode is a singly-linked list
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
-func NewListNode() *ListNode {
-	return &ListNode{Next: &ListNode{}}
-}
-
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var remainder int
 	first := true
 	var result, current *ListNode
@@ -48,17 +42,4 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		current.Val = v
 	}
 	return result
-}
-
-//l1 := [2,4,3]
-//l2 := [5,6,4]
-
-//Output: [7,0,8] [7, 0, 4]
-
-func main() {
-	l1 := &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 9}}}
-	l2 := &ListNode{Val: 5, Next: &ListNode{Val: 6}}
-
-	result := addTwoNumbers(l1, l2)
-	fmt.Println(result)
 }
