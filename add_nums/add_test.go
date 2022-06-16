@@ -10,7 +10,7 @@ func TestAddTwoNums(t *testing.T) {
 	l2 := &ListNode{Val: 5, Next: &ListNode{Val: 6, Next: &ListNode{Val: 4}}}
 	want := &ListNode{Val: 7, Next: &ListNode{Val: 0, Next: &ListNode{Val: 8}}}
 
-	got := AddTwoNumbers(l1, l2)
+	got := addTwoNumbers(l1, l2)
 
 	assert.Equal(t, want, got)
 }

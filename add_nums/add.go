@@ -6,7 +6,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var remainder int
 	first := true
 	var result, current *ListNode
