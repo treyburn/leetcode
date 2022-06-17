@@ -2,7 +2,7 @@ package zigzag
 
 func convert(s string, numRows int) string {
 	var output string
-	var cursor, wordIndex int // cursor corresponds to
+	var cursor, wordIndex int // cursor corresponds to which subrepo we write to
 	var reverse bool          // this controls which direction the cursor moves
 	repo := make([][]rune, numRows)
 
