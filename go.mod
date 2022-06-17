@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/stretchr/testify v1.7.2
-	github.com/treyburn/generic v0.0.0-20220616233406-ec4cc62cf54a
+	github.com/treyburn/generic v0.0.0-20220616235634-3b41f68e8aec
 )
 
 require (
