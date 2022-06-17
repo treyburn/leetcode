@@ -9,9 +9,8 @@ func maxArea(height []int) int {
 	right := len(height) - 1
 
 	for left < right {
-		if currentArea := min(height[right], height[left]) * (right - left); currentArea > maxArea {
-			maxArea = currentArea
-		}
+		currentArea := min(height[right], height[left]) * (right - left)
+		maxArea = max(currentArea, maxArea)
 
 		if height[left] < height[right] {
 			left++
@@ -24,6 +23,13 @@ func maxArea(height []int) int {
 
 func min(x, y int) int {
 	if x < y {
+		return x
+	}
+	return y
+}
+
+func max(x, y int) int {
+	if x > y {
 		return x
 	}
 	return y
