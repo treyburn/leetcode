@@ -34,3 +34,23 @@ func max(x, y int) int {
 	}
 	return y
 }
+
+// this is a test function for running benchmarks to see if the `if x := foo(); x != y {bar}` syntax is slower or faster
+func originalMaxArea(height []int) int {
+	var maxArea int
+	left := 0
+	right := len(height) - 1
+
+	for left < right {
+		if currentArea := min(height[right], height[left]) * (right - left); currentArea > maxArea {
+			maxArea = currentArea
+		}
+
+		if height[left] < height[right] {
+			left++
+		} else {
+			right--
+		}
+	}
+	return maxArea
+}
