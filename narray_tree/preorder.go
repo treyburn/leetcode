@@ -1,4 +1,4 @@
-package tree
+package narray_tree
 
 /**
 * Definition for a Node.

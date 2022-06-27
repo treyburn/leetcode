@@ -1,4 +1,4 @@
-package tree
+package narray_tree
 
 import (
 	"github.com/stretchr/testify/assert"
