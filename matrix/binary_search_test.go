@@ -73,17 +73,17 @@ var bigInput = [][]int{
 	{0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 var bigMatrix = makeBinaryMatrix(bigInput)
-var got int
+var _output int
 
 func Benchmark_BinarySearch(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		got = leftMostColumnWithOne(bigMatrix)
+		_output = leftMostColumnWithOne(bigMatrix)
 	}
 }
 
 // interestingly - the naive iter to scan left is still faster
 func Benchmark_Iter(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		got = leftMostColumnWithOne_Iter(bigMatrix)
+		_output = leftMostColumnWithOne_Iter(bigMatrix)
 	}
 }
