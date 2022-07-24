@@ -24,6 +24,13 @@ func Test_leftMostColumnWithOne(t *testing.T) {
 			{0, 0, 1, 1, 1},
 			{0, 0, 0, 0, 1},
 		}, 1},
+		{"large", [][]int{
+			{1, 1, 1, 1, 1},
+			{0, 0, 0, 1, 1},
+			{0, 0, 1, 1, 1},
+			{0, 0, 0, 0, 1},
+			{0, 0, 0, 0, 0},
+		}, 0},
 	}
 
 	for _, test := range tests {
