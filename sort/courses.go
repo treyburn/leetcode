@@ -1,6 +1,7 @@
 package sort
 
 // this uses Kahn's algorithm to solve in O(v + e) time/space complexity
+// https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/
 func findOrder(numCourses int, prerequisites [][]int) []int {
 	adjList := make(map[int][]int)
 	indegree := make(map[int]int)
